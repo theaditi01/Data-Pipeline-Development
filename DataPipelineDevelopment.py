@@ -5,7 +5,7 @@ from sklearn.impute import SimpleImputer
 def run_etl_pipeline(input_file, output_file):
     # --- 1. EXTRACT ---
     print("Reading data...")
-    df = pd.read_csv(input_file)
+    df = pd.read_csv('raw_data.csv')
     
     # --- 2. TRANSFORM ---
     print("Transforming data...")
@@ -28,3 +28,4 @@ def run_etl_pipeline(input_file, output_file):
     print("Done!")
 
 run_etl_pipeline('raw_data.csv', 'cleaned_data.csv')
+
