@@ -27,5 +27,4 @@ def run_etl_pipeline(input_file, output_file):
     df.to_csv(output_file, index=False)
     print("Done!")
 
-# provide filename below
 run_etl_pipeline('raw_data.csv', 'cleaned_data.csv')
